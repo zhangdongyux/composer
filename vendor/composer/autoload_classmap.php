@@ -6,4 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Yulore\\Common\\CurlCommon' => $baseDir . '/src/common/CurlCommon.php',
+    'Yulore\\Lib\\CurlLib' => $baseDir . '/src/lib/CurlLib.php',
 );

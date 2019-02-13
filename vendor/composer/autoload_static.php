@@ -25,11 +25,17 @@ class ComposerStaticInitbd8d91a87041e2da4f695e12ff82b86c
         ),
     );
 
+    public static $classMap = array (
+        'Yulore\\Common\\CurlCommon' => __DIR__ . '/../..' . '/src/common/CurlCommon.php',
+        'Yulore\\Lib\\CurlLib' => __DIR__ . '/../..' . '/src/lib/CurlLib.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitbd8d91a87041e2da4f695e12ff82b86c::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitbd8d91a87041e2da4f695e12ff82b86c::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitbd8d91a87041e2da4f695e12ff82b86c::$classMap;
 
         }, null, ClassLoader::class);
     }
