@@ -1,0 +1,28 @@
+{
+    "name": "dongyu/yulore",
+    "description": "Package Test.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "dongyu.zhang",
+            "email": "dongyu.zhang@yulore.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+	"php": ">=7.0"
+    },
+    "autoload": {
+    "psr-4": {
+      "Yulore\\Lib\\": "src/lib",
+      "Yulore\\Common\\": "src/common"
+    }
+  },
+  "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    }
+}
